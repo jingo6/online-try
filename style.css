@@ -5,3 +5,10 @@
   list-style: none;
   box-sizing: boder-box;
 }  
+body{
+  font-family: verdana;
+}  
+ nav{
+   background: #8B0892 
+   height: 75px;
+ }
