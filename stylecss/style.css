@@ -25,6 +25,11 @@ nav ul{
   float: right;
   margin-right: 20PX;
 }
+nav ul li{
+  display: inline-block;
+  line-height: 80Px;
+  margin: 0 5px;
+
   
 h1 {
   color: green;
