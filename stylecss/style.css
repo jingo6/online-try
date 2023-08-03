@@ -88,7 +88,9 @@ a.active,a:hover{
     color: #6666ff;
     #check:checked ~ ul{
       left: 0;
-    }
+  }
+  section{}
+    
       
   
   
