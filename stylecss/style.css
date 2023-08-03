@@ -37,6 +37,61 @@ nav ul li a{
    padding: 7 14px;
   border-radius: 3PX;
 }
+a.active,a:hover{
+  background: #1b9bff;
+  transition: 5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80Px;
+  margin-right: 40Px;
+  cursor: pointer;
+  dispaly: none;
+}
+#check{
+  dispaly: none;
+}
+@media (max-width: 952PX){
+  label.logo{
+    font-size: 30px;
+    Padding-left: 50Px;
+}
+  nav ul li a{
+    font-size: 15px;
+}
+@media (max-width: 858PX){
+  .checkbtn{
+    dispay: block;
+  }
+  ul{
+    Position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #6666ff;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30PX;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #6666ff;
+    #check:checked ~ ul{
+      left: 0;
+    }
+      
+  
+  
   
 h1 {
   color: green;
