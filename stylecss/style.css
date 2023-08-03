@@ -89,13 +89,7 @@ a.active,a:hover{
     #check:checked ~ ul{
       left: 0;
   }
-  section{}
-    
-      
-  
-  
-  
-h1 {
+    h1 {
   color: green;
   text-align: center;
 }
