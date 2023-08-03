@@ -7,8 +7,19 @@
 }  
 body{
   font-family: verdana;
+  background-color: lightblue;
 }  
  nav{
    background: #8B0892 
    height: 75px;
  }
+h1 {
+  color: green;
+  text-align: center;
+}
+
+p {
+  color: orange;
+  font-family: verdana;
+  font-size: 20px;
+}
