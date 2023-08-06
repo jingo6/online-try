@@ -1,5 +1,8 @@
 body{
-background-image: url("image/FB_IMG_1553878512422.jpg");
+background-image: url("FB_IMG_1553878512422.jpg");
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
 }
   #youtube{
     width:20px;height:20px;
