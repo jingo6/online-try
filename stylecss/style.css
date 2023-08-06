@@ -1,8 +1,11 @@
- #idbackground{
-background-image: url("IMG20230708152336.jpg");
-  background-repeat: no-repeat;
-  background-position: right top;
-  width:50px;height:50px;
+body {
+      background-image: url("../image/Screenshot 2023-07-20 114906.png");
+      background-size: cover;
+      background-position: 0% 25%;
+      background-color: #A8322D;
+      background-attachment: fixed;
+      cursor: crosshair;
+}
 }
   #youtube{
     width:20px;height:20px;
