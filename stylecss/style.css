@@ -1,1 +1,9 @@
-
+body{
+  background-image: url('image/FB_IMG_1553878512422.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+  #youtube{
+    width:30px;height:30px;
+  }
