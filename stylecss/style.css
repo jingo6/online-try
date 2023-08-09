@@ -5,21 +5,10 @@
   list-style: none;
   box-sizing: border-box;
 }
-h1{
-      background-color: blue;
-      font:white;
-}
+
 body{
-      background-image: url("../IMG_20230610_162052.jpg");
-      background-size: cover;
-      background-position: 0% 25%;
-      background-color: #A8322D;
-      background-attachment: fixed;
-      font-family: montserrat;
+  font-family: montserrat;
 }
-  #youtube{
-    width:20px;height:20px;
-  }
 nav{
   background: #0082e6;
   height: 80px;
@@ -102,4 +91,21 @@ a.active,a:hover{
   #check:checked ~ ul{
     left: 0;
   }
+h1{
+      background-color: blue;
+      font:white;
 }
+body{
+      background-image: url("../IMG_20230610_162052.jpg");
+      background-size: cover;
+      background-position: 0% 25%;
+      background-color: #A8322D;
+   #youtube{
+    width:20px;height:20px;
+  }
+      background-attachment: fixed;
+      font-family: montserrat;
+}
+  #youtube{
+    width:20px;height:20px;
+  }
