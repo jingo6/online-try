@@ -1,1 +1,14 @@
-
+h1{
+      background-color: indigo;
+      font:white;
+}
+body{
+      background-image: url("../IMG_20230610_162052.jpg");
+      background-size: cover;
+      background-position: 0% 25%;
+      background-color: #A8322D;
+      background-attachment: fixed;
+}
+  #youtube{
+    width:20px;height:20px;
+  }
