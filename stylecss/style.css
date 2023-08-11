@@ -17,9 +17,12 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  width: 200px;
- background-color: blue;
+  background-color: blue;
+  position: fixed;
+  top: 0;
+width: 100%;
 }
+
 li {
   float: left;
 }
@@ -32,4 +35,11 @@ li a {
 li a:hover {
   background-color: red;
   color: white;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
 }
