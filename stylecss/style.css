@@ -19,6 +19,8 @@ ul {
   width: 200px;
  background-color: blue;
 }
+li {
+  float: left;
 
 li a {
   display: block;
