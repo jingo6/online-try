@@ -107,4 +107,6 @@ body {
     .navbar-links.active {
         display: flex;
     }
-}
+#youtube{
+    width:20px;height:20px;
+  }
