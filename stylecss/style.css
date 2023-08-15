@@ -107,19 +107,4 @@ body {
     .navbar-links.active {
         display: flex;
     }
-    .search-box {
-  justify-content: center;
-  display: flex;
-  border: 2px solid #262626;
-  line-height: 40px;
-  border-radius: 25px;
-  padding: 0px 20px 0px 10px;
-}
-.search-txt {
-  outline: none;
-  border-radius: 25px;
-  border: none;
-  width: 220px;
-  font-size: 16px;
-  padding: 5px 15px 5px 5px;
-}
+   
