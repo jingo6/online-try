@@ -108,12 +108,9 @@ body {
         display: flex;
     }
    .search-box{
-    font-size: 2rem;
-    margin: .5rem;
-}
-
-.search-box a{
-    text-decoration: none;
-    display: block;
-    color: black;
-}
+        position: absolute;
+        width: 30px;
+        height: 21px;
+       left: 25px;
+   }
+   
