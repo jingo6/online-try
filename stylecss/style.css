@@ -106,9 +106,5 @@ body {
 
     .navbar-links.active {
         display: flex;
-    }
-   .search-box{
-    position: absolute;
-    bottom: 0px;
-     }
+   
    
