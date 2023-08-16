@@ -107,4 +107,8 @@ body {
     .navbar-links.active {
         display: flex;
     }
-   
+   .search-box{
+       dispaly: flex;
+       align-items: center;
+       padding: 10px 20px;
+   }
