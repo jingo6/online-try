@@ -109,6 +109,7 @@ body {
     }
    .search-box{
         position: absolute;
+       display: block;
         width: 30px;
         height: 21px;
        left: 25px;
