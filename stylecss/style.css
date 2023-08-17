@@ -24,9 +24,9 @@ body {
 }
 
 .brand-title a{
-    text-decoration: none;
+    width: 10px;
+    height: 10PX
     display: block;
-    color: white;
 }
 
 .navbar-links {
