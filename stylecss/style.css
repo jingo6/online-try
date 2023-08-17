@@ -16,7 +16,7 @@ a{
   text-decoration: none;
 }
   .navbar{
-    min-height
+    min-height: 70px;
     display: flex;
      width: 100%;
     background: #2874A6;
