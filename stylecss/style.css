@@ -16,13 +16,6 @@ body {
     color: white;
     border-bottom: 2px solid #fff;
 }
-
-.brand-title {
-    font-size: 2rem;
-    margin: .5rem;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
 .brand-title a img{
     width: 10px;
     height: 10PX
