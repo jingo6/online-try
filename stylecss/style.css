@@ -97,6 +97,8 @@ body {
     .navbar-links ul li {
         text-align: center;
     }
+    
+    
 
     .navbar-links ul li a {
         padding: .5rem 1rem;
@@ -109,4 +111,7 @@ body {
       width: 20px; 
       height: 20px;
       left: 50Px;
+}
+    .social-media a{
+display: inline-block;
 }
