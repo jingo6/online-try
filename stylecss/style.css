@@ -16,13 +16,10 @@ body {
     color: white;
     border-bottom: 2px solid #fff;
 }
-.brand-title {
-    margin: 50px;
-}
 .brand-title img{
     position: absolute;
     width: 50px;
-    height: 50PX;
+    height: auto;
     display: block;
 }
 
