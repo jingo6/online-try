@@ -23,7 +23,7 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.brand-title a{
+.brand-title a img{
     width: 10px;
     height: 10PX
     display: block;
