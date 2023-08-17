@@ -16,6 +16,9 @@ body {
     color: white;
     border-bottom: 2px solid #fff;
 }
+.brand-title {
+    margin: .5rem;
+}
 .brand-title img{
     position: absolute;
     width: 50px;
