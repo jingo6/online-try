@@ -12,10 +12,11 @@
     justify-content: space-between;
     text-align: center;
     padding: 15px 30px;
-    .logo a img{
+    .logo-image{
+      position: absolute;
       width: 60px; 
-      height: 40px;
-      margin-left: 0Px;
+      height: auto;
+      left: 0Px;
   
   
 
