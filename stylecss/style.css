@@ -5,14 +5,25 @@
   box-sizing: boder-box;
   font-family:'Poppins', sans-serif;
 }
+header{
+  background-color: #2874A6;
+}
+li{
+  list-style: none;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
   .navbar{
+    min-height
     display: flex;
-    width: 100%;
+     width: 100%;
     background: #2874A6;
     position: relative;
     justify-content: space-between;
-    text-align: center;
-    padding: 15px 30px;
+    align-items: center;
+    padding: 0px 25px;
   }
     .logo-image{
       position: absolute;
@@ -21,13 +32,7 @@
       left: 15Px;
       top: 15px;
     }
-li{
-  list-style: none;
-}
-a{
-  color: white;
-  text-decoration: none;
-}
+
 .navbar-links{
   display: flex;
   justify-content: space-between;
