@@ -16,10 +16,10 @@ body {
     color: white;
     border-bottom: 2px solid #fff;
 }
-.brand-title a img{
+.brand-title img{
+    position: absolute;
     width: 10px;
-    height: 10PX
-    display: block;
+    height: 10PX;
 }
 
 .navbar-links {
