@@ -20,6 +20,7 @@ body {
     position: absolute;
     width: 10px;
     height: 10PX;
+    display: block;
 }
 
 .navbar-links {
