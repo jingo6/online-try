@@ -107,9 +107,5 @@ body {
     .navbar-links.active {
         display: flex;
     }
-.social-media{
-    max-width: 20%;
-     height: 20px;
-    margin-right: 25px; 
-}
+
    
