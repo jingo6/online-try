@@ -107,10 +107,19 @@ body {
     .navbar-links.active {
         display: flex;
     }
-    .mail a{ 
-        position: relative;
-        left: 50px;
-        text-decoration: none;
-}
+    
 
+.mail {
+    display: none;
+    position: relative;   
+}
+.position {
+    font-size: 2rem;
+    margin: .20rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.mail a{
+    text-decoration: none;
+    display: block;
+    color: white;
    
