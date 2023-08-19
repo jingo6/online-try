@@ -107,9 +107,9 @@ body {
     .navbar-links.active {
         display: flex;
     }
-    div.mail{ 
+    .mail{ 
         position: relative;
-        left: 50px:
+        left: 50px;
 }
 
    
