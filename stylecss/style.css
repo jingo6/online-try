@@ -108,6 +108,7 @@ body {
         display: flex;
     }
     .mail{ 
+        position: relative;
         left: 50px:
 }
 
