@@ -109,16 +109,5 @@ body {
     }
     
 
-.mail {
-    display: none;
-    position: relative;   
-}
-.position {
-    font-size: 2rem;
-    margin: 20px;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-.mail a{
-    text-decoration: none;
-    color: blue;
+
    
