@@ -9,6 +9,15 @@
     align-item: center;
     justify-content: center;
 }
+form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    boder-radius: 10px;
+}
         
 
 body {
