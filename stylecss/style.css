@@ -13,9 +13,8 @@ form{
     background: #fff;
     display: flex;
     flex-direction: column;
-    padding: 2vw 4vw;
+    padding: 2vw 2vw;
     width: 50%;
-    height: auto;
     max-width: 300px;
     boder-radius: 10px;
 }
