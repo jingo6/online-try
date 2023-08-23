@@ -14,8 +14,8 @@ form{
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
-    width: 90%;
-    max-width: 600px;
+    width: 50%;
+    max-width: 300px;
     boder-radius: 10px;
 }
         
