@@ -15,6 +15,7 @@ form{
     flex-direction: column;
     padding: 2vw 4vw;
     width: 50%;
+    height: 50%;
     max-width: 300px;
     boder-radius: 10px;
 }
