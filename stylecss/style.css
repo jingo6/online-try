@@ -3,7 +3,7 @@
     height: 3000px;
     background-color: #24CEB9;
     display: flex;
-    align-item: center;
+    align-items: center;
     justify-content: center;
 }
 form{
