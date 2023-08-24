@@ -6,6 +6,8 @@ window.onload = function(){
     navbarLinks.classList.toggle('active')
   })
   };
+function sendEmail(){
+         Email.send({
 Email.send({
     Host : "smtp.elasticemail.com",
     Username : "username",
