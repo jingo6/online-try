@@ -31,7 +31,7 @@
         </div>
     </nav>
    <div class="details">
-      <form>
+      <form onsubmit="sendEmail(); reset(); return false">
          <h3>Get In Touch</h3>
          <input type="text" id="name"placeholder="Your Name" required> 
           <input type="email" id="email"placeholder="Email Id"required>
@@ -50,5 +50,9 @@
     <a href="https://www.tiktok.com/@tradewithjivan"target="_blank"><i class="fa-brands fa-tiktok"style="margin-left: 20px;margin-right: 20px;"></i></a>
    <a href="https://www.facebook.com/jingo.jivan/"target="_blank"><i class="fa-brands fa-facebook"style="margin-left: 20px;margin-right: 20px;"></i></a></p>
     </footer>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script>
+      function sendEmail(){
+   </script>
 </body>
 </html>
