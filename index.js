@@ -9,13 +9,11 @@ window.onload = function(){
 function sendEmail(){
          Email.send({
 Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "username",
-    Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
+    SecureToken: "c90feba5-68f2-47de-9e42-54ae30850e42",
+    To : 'jivan.jingo@gmail.com',
+    From : document.getElementsByID("email").value,
+    Subject : "New contact form enquiry",
+    Body : " this is body"
 }).then(
   message => alert(message)
 );
