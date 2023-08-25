@@ -5,7 +5,7 @@ window.onload = function(){
   toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
   })
-  }
+  },
 function sendEmail(){
          Email.send({
 Email.send({
