@@ -8,7 +8,6 @@ window.onload = function(){
   }
 
 function sendEmail(){
-         Email.send({
 Email.send({
     SecureToken: "c90feba5-68f2-47de-9e42-54ae30850e42",
     To : 'jivan.jingo@gmail.com',
