@@ -15,6 +15,6 @@ Email.send({
     Subject : "New contact form enquiry",
     Body : " this is body"
 }).then(
-  message => alert(message)
+  message => alert("message sent")
 );
 }
