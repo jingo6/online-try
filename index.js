@@ -11,9 +11,9 @@ function sendEmail(){
     Email.send({
         // SecureToken : "",
 
-        Host : "smtp.elasticemail.com",
-        Username : "admin@nepalonlineshoping.com",
-        Password : "7E6573A6AF68E29E6F9864A7EFCFD4F14537",
+        Host : "smtp.gmail.com",
+        Username : "jivan.jingo@gmail.com",
+        Password : "slfwhzwtohyoxuec",
         
         To : 'jivan.jingo@gmail.com',
         From : document.getElementById("email").value,
