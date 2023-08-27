@@ -12,10 +12,10 @@ function sendEmail(){
         // SecureToken : "",
 
         Host : "smtp.elasticemail.com",
-        Username : "jivan.jingo@gmail.com",
-        Password : "DB418947F5BC0D8B6105ECBF04E9C11E6444",
+        Username : "jingo.jivan@gmail.com",
+        Password : "FA3DDD218DBCC39A48BE76571E1CE14747F9",
         
-        To : 'jivan.jingo@gmail.com',
+        To : 'jingo.jivan@gmail.com',
         From : document.getElementById("email").value,
         Subject : "New Contact Form Enquiry",
         Body :        "Name: "+document.getElementById("name").value
