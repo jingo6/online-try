@@ -16,7 +16,7 @@ function sendEmail(){
         Password : "FA3DDD218DBCC39A48BE76571E1CE14747F9",
         
         To : 'jingo.jivan@gmail.com',
-        From : document.getElementById("email").value,
+        From : jingo.jivan@gmail.com,
         Subject : "New Contact Form Enquiry",
         Body :        "Name: "+document.getElementById("name").value
                 +"<br> Email: "+document.getElementById("email").value
