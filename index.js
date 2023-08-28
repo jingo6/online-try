@@ -7,23 +7,3 @@ window.onload = function(){
   })
   }
 
-function sendEmail(){
-    Email.send({
-        // SecureToken : "",
-
-        Host : "smtp.elasticemail.com",
-        Username : "jingo.jivan@gmail.com",
-        Password : "FA3DDD218DBCC39A48BE76571E1CE14747F9",
-        
-        To : 'jingo.jivan@gmail.com',
-        From : jingo.jivan@gmail.com,
-        Subject : "New Contact Form Enquiry",
-        Body :        "Name: "+document.getElementById("name").value
-                +"<br> Email: "+document.getElementById("email").value
-                +"<br> Phone: "+document.getElementById("phone").value
-                +"<br> Message: "+document.getElementById("message").value
-    }).then(
-      message => alert(message)
-    );
-
-}
