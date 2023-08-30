@@ -1,46 +1,193 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" type="text/css" href="stylecss/style.css">
-   <script src="https://kit.fontawesome.com/90d4543505.js" crossorigin="anonymous"></script>
+	<title>Simple Address Book Manager</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			text-align: left;
+			padding: 8px;
+		}
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+		input[type=text], input[type=tel] {
+			padding: 8px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			resize: vertical;
+			width: 100%;
+		}
+    
+		input[type=submit], button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		input[type=submit]:hover, button:hover {
+			background-color: #45a049;
+		}
+		.container {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.column {
+			float: left;
+			width: 50%;
+		}
+    h2{
+      text-align: center;
+      text-decoration: underline;
+      color: #329e07;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h2:hover{
+      color: #f32009;
+    }
+	</style>
 </head>
 <body>
-    <nav class="navbar">
-        <!-- This will display shoping on the upper-left corner -->
-        <div class="brand-title">
-            <a href="https://nepalonlineshoping.com/">shoping</a>
-        </div>
+	<div class="container">
+		<h2>Simple Address Book Manager</h2>
+		<div class="row">
+			<div class="column">
+				<form>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" placeholder="Enter name">
+					<label for="mobile">Mobile:</label>
+					<input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number of 10 digits only (+91)" pattern="{0-9}10" maxlength="10">
+          <span class = "validity"></span>
+          <br>
+					<input type="button" value="Add Contact" onclick="addContact()">
+          <br>
+				</form>
+			</div>
+      <br>
+			<div class="column">
+				<input type="text" id="search" placeholder="Search by name or mobile number" oninput="showContacts()">
+			</div>
+     </div>
 
-        <!-- This is for hamberger menu -->
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
+		<table id="contacts-table">
+			<tr>
+				<th>Name</th>
+				<th>Mobile</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</table>
+	</div>
 
-        <!-- This is the link for the different pages -->
-        <div class="navbar-links">
-            <ul>
-                <li><a href="./home.html">Home</a></li> 
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./contacts.html">Contacts</a></li>
-            </ul>
-        </div>
-    </nav>
-   
-    <hr>
-    <hr>
-  <footer>
-    <p>&copy; 2023 nepalonlineshoping.com</p>
-  <p>Author: Jivan Bhattarai <br>
-  <a href="mailto:jivan.jingo@gmail.com"target="_blank"><i class="fa-solid fa-envelope-circle-check"style="margin-left:30px;margin-right: 20px;"></i></a>
- <a href="https://www.youtube.com/@traderjivan/about"target="_blank"><i class="fa-brands fa-square-youtube"style="margin-left: 20px;margin-right: 20px;"></i></a> 
-    <a href="https://www.tiktok.com/@tradewithjivan"target="_blank"><i class="fa-brands fa-tiktok"style="margin-left: 20px;margin-right: 20px;"></i></a>
-   <a href="https://www.facebook.com/jingo.jivan/"target="_blank"><i class="fa-brands fa-facebook"style="margin-left: 20px;margin-right: 20px;"></i></a></p>
-    </footer>
-   <script src="https://smtpjs.com/v3/smtp.js"></script>
-   <script src="./index.js"></script>
-</body>
-</html>
+	<script>
+
+let contacts = [];
+
+function addContact() {
+  let name = document.getElementById("name").value;
+  let mobile = document.getElementById("mobile").value;
+
+  if (mobileExists(mobile)) {
+    alert("Mobile number already exists!");
+    return;
+  }
+
+  let contact = {
+    name: name,
+    mobile: mobile
+  };
+
+  contacts.push(contact); 
+  showContacts();
+}
+
+function mobileExists(mobile) {
+  for (let i = 0; i < contacts.length; i++) {
+    if (contacts[i].mobile === mobile) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function showContacts() {
+  let table = document.getElementById("contacts-table");
+  table.innerHTML = "";
+
+  let filteredContacts = filterContacts();
+
+  for (let i = 0; i < filteredContacts.length; i++) {
+    let row = table.insertRow(i);
+    let nameCell = row.insertCell(0);
+    let mobileCell = row.insertCell(1);
+    let editCell = row.insertCell(2);
+    let deleteCell = row.insertCell(3);
+
+    nameCell.innerHTML = filteredContacts[i].name;
+    mobileCell.innerHTML = filteredContacts[i].mobile;
+
+    let editButton = document.createElement("button");
+    editButton.innerHTML = "Edit";
+    editButton.onclick = function() {
+      editContact(i);
+    }
+    editCell.appendChild(editButton);
+
+    let deleteButton = document.createElement("button");
+    deleteButton.innerHTML = "Delete";
+    deleteButton.onclick = function() {
+      deleteContact(i);
+    }
+    deleteCell.appendChild(deleteButton);
+  }
+}
+
+function editContact(index) {
+  let contact = contacts[index];
+  let name = prompt("Enter name", contact.name);
+  let mobile = prompt("Enter mobile number", contact.mobile);
+
+  if (mobileExists(mobile) && mobile == contact.mobile) {
+    alert("Mobile number already exists!");
+    return;
+  }
+
+  contact.name = name;
+  contact.mobile = mobile;
+
+  showContacts();
+}
+
+function deleteContact(index) {
+  contacts.splice(index, 1);
+  showContacts();
+}
+
+function filterContacts() {
+  let filter = document.getElementById("search").value.toLowerCase();
+  return contacts.filter(function(contact) {
+    return contact.name.toLowerCase().indexOf(filter) > -1 ||
+           contact.mobile.indexOf(filter) > -1;
+  });
+}
+
+		</script>
